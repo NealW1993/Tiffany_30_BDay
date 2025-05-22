@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Tiffany!</title>
+    <style>
+      body {
+        background-color: #d3ca79;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      #text {
+        font-family: "Playpen Sans Arabic", cursive;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        color: #a62c2c;
+      }
+
+      .firework-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* spacing between images */
+        margin: 20px 0;
+      }
+
+      .firework {
+        width: 100px;
+        height: 200px;
+      }
+
+      .main-photo {
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .heart {
+        position: fixed;
+        font-size: 30px;
+        color: red;
+        animation: floatUp 4s ease-in-out infinite;
+        opacity: 0.8;
+        z-index: 10;
+      }
+
+      /* Left heart */
+      .left-heart {
+        left: 10%;
+        bottom: 0;
+        animation-delay: 0s;
+      }
+
+      /* Right heart */
+      .right-heart {
+        right: 10%;
+        bottom: 0;
+        animation-delay: 2s;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0) scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: translateY(-150px) scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-300px) scale(0.9);
+          opacity: 0;
+        }
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="text">Happy Birthday Babe!</h1>
+    <div class="firework-row">
+      <img src="./images/firework.gif" class="firework" alt="Firework Left" />
+      <img src="./images/us.jpg" class="main-photo" alt="Couple Photo" />
+      <img src="./images/firework.gif" class="firework" alt="Firework Right" />
+    </div>
+    <div class="heart left-heart">&#10084;</div>
+    <div class="heart right-heart">&#10084;</div>
+
+    <!--<img
+      src="./images/us.jpg"
+      height="300"
+      alt="picture"
+      class="center-image"
+    /> -->
+    <p id="text">
+      Tiffany, First of all.. I just need to say how BEAUTIFUL you are and that
+      you're aging like a bottle of fine wine! You're literally aging in reverse
+      lol. I'm a very lucky guy to have such a hot momma as my wife.
+    </p>
+    <p id="text">
+      You make me lose track of time when we're together and I miss you when
+      we're away. You're on my mind a lot! I don't want to be apart from you and
+      I love the life we've built together. You're an amazing mommy and you're
+      my best friend, somebody who makes my life special and worth trying hard
+      for.
+    </p>
+    <p id="text">
+      We've had quite a journey together and I can't wait to keep experiencing
+      more! Today is your day babe and I want you to feel special too. I hope
+      that I'm able to do enough for you. I LOVE YOU so so much.
+    </p>
+    <p id="text">Happy 30th BDay baby girl :)</p>
+    <footer style="text-align: center; margin-top: 50px">
+      &copy; 2025 Neal W. -Tiffany BDay- All rights reserved.
+    </footer>
+  </body>
+</html>
